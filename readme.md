@@ -5,7 +5,7 @@ DEAL-Lib
 Originally designed and tested for some of my Raspberry Pi Projects 
 I have made this library public so that everyone may take advantage of it.
 
-Currently Included functions
+Currently Included functions:
 * pack_install
 * repo_add
 
@@ -49,4 +49,4 @@ after sourcing the file, or adding it to your script it should be initialized as
 declare -A repo=(["file"]="name of file" ["name"]="name of repo" ["web"]="url to repo" )
 pack_install
 ```
-*note that "file" is simply what the created file storing the repo will be called.
+*note that "file" is simply what the created files storing the repo will be called in /etc/apt/sources.list.d and /etc/apt/preferences.d
