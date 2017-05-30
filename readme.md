@@ -6,6 +6,9 @@ Originally designed and tested for some of my Raspberry Pi Projects
 I have made this library public so that everyone may take advantage of it.
 
 Currently Included functions
+* pack_install
+* repo_add
+
 
 ## pack_install
 pack_install is a script designed to first check and then install a package or a list of packages!
@@ -39,7 +42,7 @@ As such, a default priority of -1 is safest.
 ### Use
 
 In order to download a package from a added repo you simply use 'apt-get install -t ${repo[name]}'
-where '${repo[name]}' is what you have named the repo, not the file!
+where '${repo[name]}' is what you have named the **repo**, not the **file**!
 
 after sourcing the file, or adding it to your script it should be initialized as such:
 '''
