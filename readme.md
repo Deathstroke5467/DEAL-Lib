@@ -1,13 +1,13 @@
 DEAL-Lib
 ======
-## DEAL: Debian Easy Access Library
+### DEAL: Debian Easy Access Library
 
 Originally designed and tested for some of my Raspberry Pi Projects 
 I have made this library public so that everyone may take advantage of it.
 
 Currently Included functions
 
-### pack_install
+## pack_install
 pack_install is a script designed to first check and then install a package or a list of packages!
 Often times people just apt-get and a package could already be installed wasting time, processing,
 and sometimes just giving a messy output. 
@@ -18,7 +18,7 @@ and does so using the newer Debian /etc/apt/sources.list.d and /etc/apt/preferen
 Currently this script must be edited and has been copied directly from one of my projects,
 a dynamic version for use with the repo_add function will be added soon!
 
-## Use
+### Use
 
 '''
 packlist="package1 package2 package3"
@@ -26,7 +26,7 @@ pack_install
 '''
 
 
-### repo_add
+## repo_add
 repo_add uses the newer Debian /etc/apt/sources.list.d and /etc/apt/preferences.d systems
 the /etc/apt/preferences.d file is set to a priority of -1 by default. 
 This means if you apt-get, it will not source from that repo (this is useful as a security meaure.)
@@ -36,7 +36,7 @@ the apt-get system defaults to downloading the newest version of a package; Howe
 you would definitely not want to be installing beta's of everything by default. 
 As such, a default priority of -1 is safest.
 
-## Use
+### Use
 
 In order to download a package from a added repo you simply use 'apt-get install -t ${repo[name]}'
 where '${repo[name]}' is what you have named the repo, not the file!
