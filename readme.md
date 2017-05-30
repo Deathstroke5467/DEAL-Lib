@@ -23,10 +23,10 @@ a dynamic version for use with the repo_add function will be added soon!
 
 ### Use
 
-'''
+```
 packlist="package1 package2 package3"
 pack_install
-'''
+```
 
 
 ## repo_add
@@ -45,8 +45,8 @@ In order to download a package from a added repo you simply use 'apt-get install
 where '${repo[name]}' is what you have named the **repo**, not the **file**!
 
 after sourcing the file, or adding it to your script it should be initialized as such:
-'''
+```
 declare -A repo=(["file"]="name of file" ["name"]="name of repo" ["web"]="url to repo" )
 pack_install
-'''
+```
 *note that "file" is simply what the created file storing the repo will be called.
