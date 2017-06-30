@@ -13,13 +13,10 @@ Currently Included functions:
 ## pack_install
 pack_install is a script designed to first check and then install a package or a list of packages!
 Often times people just apt-get and a package could already be installed wasting time, processing,
-and sometimes just giving a messy output. 
+and sometimes just spamming the terminal. 
 
 This is even more important since pack_install's principle feature is to be able to install a list of packages,
 and does so using the newer Debian /etc/apt/sources.list.d and /etc/apt/preferences.d systems.
-
-Currently this script must be edited and has been copied directly from one of my projects,
-a dynamic version for use with the repo_add function will be added soon!
 
 ### Use
 
